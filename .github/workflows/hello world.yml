@@ -4,8 +4,8 @@ name: "Hello World Workflow"
 on: 
   push:
     branches: 
-      - master
-      - Production
+      - '**'
+      
 
 jobs: 
   hello_world: 
@@ -16,4 +16,4 @@ jobs:
         
       - name: "Print Hello Current Date"
         run: date
-               
+
