@@ -11,8 +11,7 @@ on:
       branches:
           - master
       types:
-          - closed
-          - opened
+          - .**.
         
   workflow_dispatch:
 
@@ -37,4 +36,3 @@ jobs:
             steps: 
                 - name: "Running on schedule"   # Step 1
                   run: echo "Running on schedule"
-                  
